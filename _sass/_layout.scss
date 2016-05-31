@@ -11,17 +11,27 @@
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid $text-color;
+    padding: 6px 18px;
+    margin: 10px;
+    font-size: 20px;
+    line-height: auto;
     letter-spacing: -1px;
-    margin-bottom: 0;
     float: left;
-
+    color: $text-color;
+    transition: 1s background ease;
     &,
     &:visited {
-        color: $grey-color-dark;
+      color: $text-color;
     }
+}
+
+.site-title:hover {
+  background: $text-color;
+  color: #fff;
+  text-decoration: none;
 }
 
 .site-nav {
@@ -187,6 +197,8 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    font-family: $meta-font;
+    text-align: center;
 }
 
 .post-link {
@@ -207,6 +219,8 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    font-weight: 700;
+    text-align: center;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -218,6 +232,7 @@
 
     h2 {
         font-size: 32px;
+        font-weight: 700;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -226,6 +241,7 @@
 
     h3 {
         font-size: 26px;
+        text-transform: uppercase;
 
         @include media-query($on-laptop) {
             font-size: 22px;

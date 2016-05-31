@@ -13,7 +13,7 @@ you that it's not for the faint of heart. The program moves _extremely_
 quickly, and will leave you in the dust if you are not paying attention 
 at all times – on top of putting in the extra hours at home.
 
-In average, most coding bootcamps expect you to put no less than 40 
+On average, most coding bootcamps expect you to put no less than 40 
 hours a week (but most students average between 60 to 80 hours).
 
 There's no sugarcoating it: You will live and _breath_ code for 3 months (dreams of the command line started yesterday for me), and 
@@ -29,15 +29,10 @@ The bulk of the front-end course is Javascript (which we will be starting
 next week), but this first week has included a few pleasant surprises 
 where I learned new things about HTML & CSS I never knew. Or never quite understood completely.
 
-The other pleasant surprise was getting that chance to learn from a young and very talented teacher by the name of Justin Richards - an extremely talented coder and teacher who wears cowboy boots, rides a BMW motorcycle, and wears Harry Potter 
+The other pleasant surprise was getting the chance to learn from a young and very talented teacher by the name of Justin Richards - an extremely talented coder and teacher who wears cowboy boots, rides a BMW motorcycle, and wears Harry Potter 
 glasses – and somehow makes it all _look good_.
 
-Thinking about attending The Iron Yard yourself? Well, that's why I decided to 
-start this series. To cover everything we learned in class, including my 
-personal thoughts about what went great for me, and some of my personal 
-struggles.
-
-So without further ado, I present to you...
+Anyways, let's get to the good stuff, shall we? Without any further ado, I present to you... 
 
 ## The Iron Yard: Week 1 in Review
 
