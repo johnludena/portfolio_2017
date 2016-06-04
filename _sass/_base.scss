@@ -94,14 +94,15 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
+    color: $text-color;
+    border-bottom: 1px solid $brand-color;
 
     &:visited {
-        color: $brand-color;
+        color: $text-color;
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $brand-color;
     }
 }
 
@@ -133,7 +134,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $grey-color;
 }
 
 code {

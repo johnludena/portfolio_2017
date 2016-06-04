@@ -21,9 +21,11 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #4CB4CE;
 
-$grey-color:       #828282;
+$grey-color:       #e8e8e8;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+$grey-border-light: #EAEAEA;
 
 // Width of the content area
 $content-width:    800px;
