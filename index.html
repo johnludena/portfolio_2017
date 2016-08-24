@@ -1,23 +1,429 @@
----
-layout: default
----
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Ludena - Front-End Developer</title>
 
-<div class="home">
+    <script src="https://use.fontawesome.com/a7ab802f5c.js"></script>
+    
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-  <h1 class="page-heading">Posts</h1>
+    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <!-- setting up off-canvas slide-out form -->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner portfolio-wrapper" data-off-canvas-wrapper>
+        <div class="hidden-form off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+          <!-- Close button -->
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
 
-  <p class="rss-subscribe">subscribe <a href="http://eepurl.com/Z0giz">via email</a></p>
+          <div class="form-wrapper">
+            <h3>Get in touch with me now</h3>
 
-</div>
+            <p>You’ve arrived at my super secret contact form! If you’d rather email me directly, my address is <a href="mailto:johnludena@gmail.com">johnludena@gmail.com</a>.</p>
+
+            <form action="https://formspree.io/johnludena@gmail.com"
+      method="POST" data-abide novalidate>
+              <div data-abide-error class="alert callout" style="display: none;">
+                <p><i class="fi-alert"></i> There are some errors in your form.</p>
+              </div>
+              <div class="row">
+                  <label>Full Name:
+                    <input name="name" type="text" required />
+                    <span class="form-error">
+                      Yo, you had better fill this out, it's required.
+                    </span>
+                  </label>
+                  
+                  <label>Phone Number:
+                    <input name="phone" type="text" data-abide-ignore />
+                  </label>
+                  
+                  <label>Email:
+                    <input type="text" name="email" required />
+                    <span class="form-error">
+                      I'm required!
+                    </span>
+                  </label>
+                  <label>Your message:
+                    <textarea name="message" type="text" rows="4"></textarea>
+                    <span class="form-error">
+                      Hey, passwords are supposed to match!
+                    </span>
+                  </label>
+                  
+              </div>
+              
+              <button class="button" type="submit" value="Submit">Submit</button>
+             
+            </form>
+
+          </div><!-- end of contact form section wrapper -->
+
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          
+          <!-- hero banner section -->
+          <section id="hero">
+            <div class="row">
+              <div class="large-5 columns">
+<!--                 <a class="logo">John Ludena</a>
+ -->                <h1>Creative <br/>Front-End Development for a Better WWW.</h1>
+                <button type="button" class="button" data-toggle="offCanvas">Contact me</button>
+              </div>
+              <div class="large-7 columns">
+                <img class="wow bounceIn center" src="images/brain.jpg" />
+              </div>
+            </div>
+          </section>
+
+          <!-- yours truly section -->
+          <section id="about">
+            <h2 class="text-center">A little about myself</h2>
+            
+            <div class="row">
+              <div class="large-4 columns">
+                <img class="gravatar center" src="https://www.gravatar.com/avatar/ac9c09f9d6d3591c0ad7fbdc25ad8d26?s=200" />
+                <div id="random-fact-container">
+                  <div class="fact-bubble hidden">Hello</div>
+                </div>
+                <p class="caption text-center">Click on my happy face to learn a random fact about me.<br />
+                TMI may be involved. You’ve been warned.</p>
+              </div>
+
+              <div class="large-8 columns">
+                
+                <p>My name is John Ludena and I’ve been building websites and web applications professionally for over 6 years – the last 3 working as an independent freelance contractor.
+
+                <p>In that time, I’ve built countless web properties for companies ranging from brand-new startups – all the way to large corporations. I’ve not only gotten the chance to work with some extremely talented teams, but also learn from some smart and savvy business owners.</p>      
+
+                <p>It’s been one hell of a ride.</p>    
+
+                <p>But as much as I enjoy the freedom and flexibility that comes with being a freelancer and working with various teams, I’m looking for a change of pace in 2016 and looking to join a new team full-time.</p>
+
+                <p>Do you think I’d be a good fit for your company? Excellent! Feel free to check out my portfolio. If you like what you see, shoot me a message. I’d love to hear from you.</p>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- skills section -->
+          <section id="skills">
+
+            <h2 class="text-center">My bread and butter skills</h2>
+
+            <div class="row skill-row">
+              <div class="large-6 columns dev-skill">
+                <div class="row">
+                  <div class="small-3 columns">
+                      <img class="wow fadeInDown" src="http://placehold.it/128x128" />
+                  </div>
+                
+                  <div class="small-9 columns">
+                     <h3>Front-end Development</h3>
+                      <p>Front-end development is where I get to transform beautiful pixels into beautiful & fluid interfaces with the power of HTML5, CSS3 & Javascript.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="large-6 columns dev-skill">
+                <div class="row">
+                  <div class="small-3 columns">
+                      <img class="wow fadeInDown" src="http://placehold.it/128x128" />
+                  </div>
+                
+                  <div class="small-9 columns">
+                     <h3>Responsive Design</h3>
+                      <p>Front-end development is where I get to transform beautiful pixels into beautiful & fluid interfaces with the power of HTML5, CSS3 & Javascript.</p>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+             <div class="row skill-row">
+              <div class="large-6 columns dev-skill">
+                <div class="row">
+                  <div class="small-3 columns">
+                      <img class="wow fadeInDown" src="http://placehold.it/128x128" />
+                  </div>
+                
+                  <div class="small-9 columns">
+                     <h3>Ecommerce &<br /> Online Payments</h3>
+                      <p>Front-end development is where I get to transform beautiful pixels into beautiful & fluid interfaces with the power of HTML5, CSS3 & Javascript.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="large-6 columns dev-skill">
+                <div class="row">
+                  <div class="small-3 columns">
+                      <img class="wow fadeInDown" src="http://placehold.it/128x128" />
+                  </div>
+                
+                  <div class="small-9 columns">
+                     <h3>Wordpress Development</h3>
+                      <p>Front-end development is where I get to transform beautiful pixels into beautiful & fluid interfaces with the power of HTML5, CSS3 & Javascript.</p>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </section> 
+
+          <!-- works section -->
+          <section id="work">
+
+            <h2 class="text-center">My latest projects</h2>
+
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+              <ul class="orbit-container">
+                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+                <li class="is-active orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="http://placehold.it/500x466" />
+                      <p class="caption text-center">View this project <a href="#">live</a>, or check out the soure code on <a href="#">Github</a></p>
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>Storegrafi</h3>
+                      <h4>An ecommerce platform for Instagram creators</h4>
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+                    </div>
+                  </div>
+                </li>
+
+                
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="http://placehold.it/500x466" />
+                      <p class="caption text-center">View this project <a href="#">live</a>, or check out the soure code on <a href="#">Github</a></p>
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>PreCash</h3>
+                      <h4>An ecommerce platform for Instagram creators</h4>
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="http://placehold.it/500x466" />
+                      <p class="caption text-center">View this project <a href="#">live</a>, or check out the soure code on <a href="#">Github</a></p>
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>Drumpfsy</h3>
+                      <h4>An ecommerce platform for Instagram creators</h4>
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="http://placehold.it/500x466" />
+                      <p class="caption text-center">View this project <a href="#">live</a>, or check out the soure code on <a href="#">Github</a></p>
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>Blue Leaf</h3>
+                      <h4>An ecommerce platform for Instagram creators</h4>
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="http://placehold.it/500x466" />
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>Medium Rare</h3>
+                      <h4>An ecommerce platform for Instagram creators</h4>
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="http://placehold.it/500x466" />
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>WeatherCard</h3>
+                      <h4>An ecommerce platform for Instagram creators</h4>
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="http://placehold.it/500x466" />
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>Todo App</h3>
+                      <h4>An ecommerce platform for Instagram creators</h4>
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="http://placehold.it/500x466" />
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>EcommerceTutorial</h3>
+                      <h4>An ecommerce platform for Instagram creators</h4>
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+
+                      <p>Custom Wordpress development of themes and plugins. This is where I got my chops as a developer, and still use Wordpress to this day to help fellow entrepreneurs and startups get off the ground quick and on budget.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+             
+            </div>            
+
+          </section>
+
+          <!-- testimonials section -->
+          <section id="testimonials">
+            <h2 class="text-center">What Other People Have Said About Me...</h2>
+            <div class="row">
+              <div class="large-12 columns">
+
+                <!-- start of Foundation Orbit -->
+                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="data-auto-play: false">
+                  <ul class="orbit-container">
+                    
+                    <li class="is-active orbit-slide">
+                      <blockquote>John produces great results no matter how big the project or how tight the schedule. He stays up-to-date with the latest developments in technology and makes excellent suggestions to improve the performance and functionality of websites. I highly recommend him for your next project.”.<cite>Rick Naylor, Marketing Director at PreCash</cite></blockquote>
+
+                    </li>
+                    <li class="orbit-slide">
+                      <blockquote>Working with John is not only very easy and effective, but also a pleasure! He is very skilled and keeps educating himself to learn new things he later applies to your projects. He is reliable, hard working, very fairly priced, and someone you can completely trust – especially when dealing with delicate information.”.<cite>Renzo Bolivar, Account Manager at Lopez Negrete Communications</cite></blockquote>
+                    </li>
+                    <li class="orbit-slide">
+                      <blockquote>John not only has excellent design skills but is extremely knowledgeable at digital production and solving web issues. John adds talent and value to any project.”<cite>Wes Weaver, Owner of W-Squared Marketing</cite></blockquote>
+                    </li>
+                    <li class="orbit-slide">
+                      <blockquote>John is flexible and easy to work with.  He listens and then focuses on solving your website challenge with a solution that works and is aesthetically pleasing.  He is a great member of the team.”<cite>Nick Pantazis, President of WilsherCo, Inc.</cite></blockquote>
+                    </li>
+                  </ul>
+                  <nav class="orbit-bullets">
+                    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                  </nav>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+           <!-- medium section -->
+          <section id="medium">
+            <h2 class="text-center">My Latest Medium Ramblings:</h2>
+            <h3 class="text-center">The Mysterious Javascript Event Loop</h3>
+            <p class="date text-center">Published on July 1st, 2016</p>
+            <div class="row">
+              <div class="large-6 columns">
+                <img src="http://placehold.it/530x300" />
+              </div>
+              <div class="large-6 columns">
+                <p>Yesterday I learned something quite interesting from watching Philip Roberts talk at JSConf EU a couple of years back. Philip explained the magic that lies behind the event loop in Javascript, and why it’s so important to keep in mind when you want to build a fast & fluid app that users love.</p>
+                <a class="button hollow" href="https://medium.com/@johnludena/the-mysterious-javascript-event-loop-b58ad3a9b9bc#.5ckh8n1jo" target="_blank">Read this on Medium.com</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- bottom page call-to-action -->
+          <section id="bottom-cta">
+            <h2 class="text-center">Ready to make some digital magic together?</h2>
+            <div class="row">
+              
+              <div class="large-12 columns">
+                <p>Hit that button below and let’s start a friendly chat. I promise you won’t regret it.</p>
+                <button type="button" class="button" data-toggle="offCanvas">Get in touch with me</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- footer section -->
+          <section id="footer">
+            <div class="row">
+              
+              <div class="large-12 columns">
+                
+                <div class="footer-icons">
+                  <a class="social-icon" href="#"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                  <a class="social-icon" href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                  <a class="social-icon" href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                  <a class="social-icon" href="mailto:johnludena@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  
+                </div>
+
+                <p class="text-center copyright">© 2016 John Ludena. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Check out the source code for this site <a href="#">here</a>.</p>
+
+              </div>
+            </div>
+          </section>
+
+        </div><!-- end of off-canvas content wrapper -->
+      </div>
+    </div>
+
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

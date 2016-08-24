@@ -1,0 +1,252 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,400i|Work+Sans:300,700,900';
+
+/* GENERAL STYLES */
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #78797d;
+	font-size: 18px;
+}
+
+h1, h2, h3 {
+	font-family: 'Work Sans', sans-serif;
+	color: #333333;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+section {
+	padding: 5em 0;
+}
+
+h2 {
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+h3 {
+	text-transform: uppercase;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+blockquote {
+	border: none;
+    font-size: 1.5rem;
+}
+
+cite {
+	margin-top: 20px;
+    display: block;
+    font-size: 1rem;
+    color: #a2a2a2;
+}
+
+.row {
+	max-width: 72.5rem;
+}
+
+.center {
+	display: block;
+    margin: 0 auto;
+}
+
+.caption {
+	font-style: italic;
+    color: #adaeb6;
+    font-size: .9rem;
+    margin-top: 30px;
+}
+
+.caption a {
+	color: #33aabc;
+}
+
+.button {
+	background: #3bc1e5;
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size: 1rem;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.button.hollow {
+	border-width: 2px;
+}
+
+.button:hover {
+	text-decoration: none;
+}
+
+
+/* OFFCANVAS FORM */
+
+.off-canvas-wrapper {
+	background: #2a2b30;
+}
+
+.off-canvas {
+	background: none;
+	color: #fff;
+}
+
+.off-canvas h3 {
+	color: #fff;
+}
+
+.off-canvas label {
+	color: #fff;
+}
+
+.hidden-form.off-canvas.position-right {
+    right: -400px;
+    top: 0;
+    width: 400px;
+    padding: 4em 2em;
+}
+
+.portfolio-wrapper.is-open-right {
+    -webkit-transform: translateX(-400px);
+    -ms-transform: translateX(-400px);
+    transform: translateX(-400px);
+
+}
+
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+	border-radius: 0;
+    box-shadow: none;
+    transition: all 3s ease;
+}
+
+[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus {
+	box-shadow: none;
+    border: 3px solid #3bc1e5;
+}
+
+
+[data-whatinput='mouse'] .orbit-previous, [data-whatinput='mouse'] .orbit-next {
+    outline: 0;
+    background: none;
+    color: #bdbdbd;
+    font-size: 40px;
+}
+
+.close-button:hover, .close-button:focus {
+/*	color: #f3f3f3; */
+	color: purple;
+}
+
+.orbit-previous:hover, .orbit-next:hover {
+	background: #f7f7f7;
+}
+
+/* PAGE STYLES */
+
+#hero {
+	background: #f4f2f3;
+}
+
+#hero h1 {
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 0.9;
+    font-size: 4rem;
+}
+
+
+/* ABOUT ME SECTION */
+#about {
+	background: #fff;
+}
+
+.gravatar {
+	border-radius: 50%;
+	border: 4px solid #3bc1e5;
+    cursor: pointer;
+}
+
+.gravatar:hover {
+	border: 4px solid #57ceef;;
+}
+
+#random-fact-container {
+	position: relative;
+}
+
+.fact-bubble {
+	position: absolute;
+    top: -20px;
+    left: 50%;
+    text-align: center;
+    background: #e5e5f5;
+    max-width: 490px;
+    padding: 20px;
+    margin: 20px auto;
+    transform: translateX(-50%);
+    transition: 1s ease all;
+    opacity: 1;
+}
+
+.fact-bubble.hidden {
+	top: -80px;
+	opacity: 0;
+}
+
+/* DEVELOPMENT SKILLS */
+#skills {
+	background: #f5f7fa;
+}
+
+.dev-skill {
+	padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#work .orbit-container:focus {
+	outline:0;
+}
+
+/* CLIENT TESTIMONIALS SECTION */
+#testimonials {
+	background: #e3e7e7;
+	text-align: center;
+}
+
+.orbit-bullets button {
+    width: 15px;
+    height: 15px;
+    margin: 0.1rem;
+    background-color: #cacaca;
+    border-radius: 50%;
+}
+
+/* MEDIUM LATEST ARTICLE  */
+.date {
+	font-style: italic;
+	margin-bottom: 50px;
+}
+
+#bottom-cta {
+	background: #f4f2f3;
+	text-align: center;
+}
+
+/* FOOTER SECTION  */
+#footer {
+	text-align: center;
+}
+
+.social-icon {
+	padding-right: 8px;
+}
+
+.copyright {
+	font-size: .9rem;
+    padding-top: 1em;
+    margin-top: 2em;
+    color: #b7b7b7;
+}
