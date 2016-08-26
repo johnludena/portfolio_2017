@@ -65,17 +65,29 @@ cite {
 	color: #33aabc;
 }
 
+.build-summary {
+	font-style: italic;
+    color: #adaeb6;
+    font-size: .9rem;
+    margin-top: 30px;
+}
+
+
 .button {
 	background: #3bc1e5;
     border-radius: 30px;
     padding: 20px 30px;
-    font-size: 1rem;
     margin: 20px 0;
     font-size: 1.2rem;
 }
 
 .button.hollow {
 	border-width: 2px;
+}
+
+.button.small {
+    font-size: 1rem;
+    padding: 19px 25px;
 }
 
 .button:hover {
@@ -92,6 +104,10 @@ cite {
 .off-canvas {
 	background: none;
 	color: #fff;
+}
+
+.off-canvas a {
+	color: #69ceec;
 }
 
 .off-canvas h3 {
@@ -154,7 +170,7 @@ cite {
 	font-weight: 900;
 	text-transform: uppercase;
 	line-height: 0.9;
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 
 
@@ -179,21 +195,49 @@ cite {
 
 .fact-bubble {
 	position: absolute;
-    top: -20px;
+	font-size: .9rem;
+    top: -10px;
     left: 50%;
     text-align: center;
-    background: #e5e5f5;
     max-width: 490px;
     padding: 20px;
     margin: 20px auto;
     transform: translateX(-50%);
     transition: 1s ease all;
     opacity: 1;
+    background: #ffffff;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
 }
 
 .fact-bubble.hidden {
 	top: -80px;
 	opacity: 0;
+}
+
+
+.fact-bubble:after, .fact-bubble:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.fact-bubble:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+}
+.fact-bubble:before {
+	border-color: rgba(99, 100, 117, 0);
+	border-bottom-color: #d2d2d2;
+	border-width: 21px;
+	margin-left: -21px;
 }
 
 /* DEVELOPMENT SKILLS */
