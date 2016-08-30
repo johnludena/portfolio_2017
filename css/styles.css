@@ -350,6 +350,10 @@ cite {
 	background: #f5f7fa;
 }
 
+#skills h2 {
+	padding-bottom: 0;
+}
+
 .dev-skill {
 	padding-top: 40px;
     padding-bottom: 40px;
