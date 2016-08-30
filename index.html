@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Ludena - Front-End Developer</title>
+    <title>John Ludena | Creative Front-End Developer | Houston, TX</title>
 
     <!-- FontAwesome for random icons needed -->
     <script src="https://use.fontawesome.com/a7ab802f5c.js"></script>
@@ -67,6 +67,7 @@
                       Hey, passwords are supposed to match!
                     </span>
                   </label>
+                  <input type="hidden" name="_next" value="/thanks.html" />
                   
               </div>
               
@@ -83,25 +84,43 @@
           <section id="hero">
             <div class="row">
               <div class="large-5 columns">
-                <img class="logo" src="images/logo.png" alt="John Ludena" />
-                <h1>Creative <br/>Front-End Developer for a Better WWW.</h1>
-                <button type="button" class="button" data-toggle="offCanvas">Contact me</button>
+                <img class="logo wow slideInLeft centered-on-small" src="images/logo.png" alt="John Ludena" />
+                <h1 class="wow slideInLeft centered-on-small">Creative <br/>Front-End Developer for a Better WWW.</h1>
+                <button type="button" class="button wow slideInLeft centered-on-small" data-toggle="offCanvas">Contact me</button>
               </div>
               <div class="large-7 columns">
-                <img class="wow bounceIn center" src="images/brain.jpg" />
+                <div class="brain-wrapper">
+                    <img id="icon-css3" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-css3.png" width="70"/>
+                   
+                    <img id="icon-html5" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-html5.png" width="70"/>
+                    
+                    <img id="icon-sass" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-sass.png" width="70"/>
+                   
+                    <img id="icon-ps" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-ps.png" width="65"/>
+                    
+                    <img id="icon-mongodb" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-mongodb.png" width="70"/>
+                    
+                    <img id="icon-nodejs" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-nodejs.png" width="70"/>
+                   
+                    <img id="icon-react" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-react.png" width="70"/>
+                    
+                    <img id="icon-js" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-js.png" width="70"/>
+                   
+                    <img class="wow fadeIn center" src="images/brain.jpg" />
+                </div>
               </div>
             </div>
           </section>
 
           <!-- yours truly section -->
           <section id="about">
-            <h2 class="text-center">A little about myself</h2>
+            <h2 class="text-center">A little about yours truly</h2>
             
             <div class="row">
               <div class="large-4 columns">
                 <img class="gravatar center wow fadeIn" src="https://www.gravatar.com/avatar/ac9c09f9d6d3591c0ad7fbdc25ad8d26?s=200" />
                 <div id="random-fact-container">
-                  <div class="fact-bubble hidden arrow_box">Hello</div>
+                  <div class="fact-bubble hidden arrow_box"></div>
                 </div>
                 <p class="caption text-center">Click on my happy face to learn a random fact about me.<br />
                 TMI may be involved. You’ve been warned.</p>
@@ -132,12 +151,12 @@
               <div class="large-6 columns dev-skill">
                 <div class="row">
                   <div class="small-3 columns">
-                      <img class="wow rotateIn" src="images/icon-front-end.png" />
+                      <img src="images/icon-front-end.png" />
                   </div>
                 
                   <div class="small-9 columns">
                      <h3>Front-end Development</h3>
-                      <p>This is where I get to transform mockups into beautiful & fluid web interfaces with the power of HTML, CSS & Javascript.</p>
+                      <p>This is where I get to transform image mockups into beautiful & fluid web interfaces with the power of HTML, CSS & Javascript.</p>
 
                   </div>
                 </div>
@@ -146,7 +165,7 @@
               <div class="large-6 columns dev-skill">
                 <div class="row">
                   <div class="small-3 columns">
-                      <img class="wow rotateIn" src="images/icon-responsive.png" />
+                      <img src="images/icon-responsive.png" />
                   </div>
                 
                   <div class="small-9 columns">
@@ -163,7 +182,7 @@
               <div class="large-6 columns dev-skill">
                 <div class="row">
                   <div class="small-3 columns">
-                      <img class="wow rotateIn" src="images/icon-ecommerce.png" />
+                      <img src="images/icon-ecommerce.png" />
                   </div>
                 
                   <div class="small-9 columns">
@@ -177,7 +196,7 @@
               <div class="large-6 columns dev-skill">
                 <div class="row">
                   <div class="small-3 columns">
-                      <img class="wow rotateIn" src="images/icon-wordpress.png" />
+                      <img src="images/icon-wordpress.png" />
                   </div>
                 
                   <div class="small-9 columns">
@@ -224,11 +243,11 @@
                 <li class="orbit-slide">
                   <div class="row">
                     <div class="large-6 columns">
-                      <img class="wow fadeInLeft" src="images/app-demo-precash.jpg" />
+                      <img src="images/app-demo-precash.jpg" />
                     
                     </div>
 
-                    <div class="large-6 columns wow fadeInRight">
+                    <div class="large-6 columns">
                       <h3>PreCash</h3>
                       <h4>Custom wordpress theme with third party app integrations.</h4>
                       <p>PreCash is a major player in the bill payment industry, providing fantastic products & services to make it easier for people to pay their everyday bills – even if they don’t have a banking institution.</p>
@@ -366,7 +385,7 @@ Integration with Formstack, a powerful hosted contact form service</li>
                         <li>Are payment gateways and merchant accounts the same thing?</li>
                       </ul>
 
-                      <p class="build-summary"><strong>Build summary:</strong>HTML5, CSS3, Wordpress, cPanel Administration, Mailchimp, Camtasia (for recording screencasts)</p>
+                      <p class="build-summary"><strong>Build summary:</strong> HTML5, CSS3, Wordpress, cPanel Administration, Mailchimp, Camtasia (for recording screencasts)</p>
 
 
                       <a class="button small" href="http://www.youtube.com/user/ecommercetutorial" target="_blank">View live demo</a>
@@ -381,7 +400,7 @@ Integration with Formstack, a powerful hosted contact form service</li>
 
           <!-- testimonials section -->
           <section id="testimonials">
-            <h2 class="text-center">What Other People Have Said About Me...</h2>
+            <h2 class="text-center">Some kind words from some amazing people...</h2>
             <div class="row">
               <div class="large-10 large-centered columns">
 
@@ -417,23 +436,23 @@ Integration with Formstack, a powerful hosted contact form service</li>
 
           <!-- medium section -->
           <section id="medium">
-            <h2 class="text-center">My Latest Medium Ramblings:</h2>
+            <h2 class="text-center">Featured Medium Ramblings</h2>
             <h3 class="text-center">The Mysterious Javascript Event Loop</h3>
             <p class="date text-center">Published on July 1st, 2016</p>
             <div class="row">
               <div class="large-6 columns">
-                <img class="wow fadeIn" src="images/medium-featured.jpg" />
+                <img src="images/medium-featured.jpg" />
               </div>
               <div class="large-6 columns">
                 <p>Yesterday I learned something quite interesting from watching Philip Roberts talk at JSConf EU a couple of years back. Philip explained the magic that lies behind the event loop in Javascript, and why it’s so important to keep in mind when you want to build a fast & fluid app that users love.</p>
-                <a class="button hollow small" href="https://medium.com/@johnludena/the-mysterious-javascript-event-loop-b58ad3a9b9bc#.5ckh8n1jo" target="_blank">Read this on Medium.com</a>
+                <a class="button hollow small" href="https://medium.com/@johnludena/the-mysterious-javascript-event-loop-b58ad3a9b9bc#.5ckh8n1jo" target="_blank">Read this post on Medium.com</a>
               </div>
             </div>
           </section>
 
           <!-- bottom page call-to-action -->
           <section id="bottom-cta">
-            <h2 class="text-center">Ready to make some digital magic together?</h2>
+            <h2 class="text-center">Ready to build something special together?</h2>
             <div class="row">
               
               <div class="large-12 columns">
@@ -450,14 +469,13 @@ Integration with Formstack, a powerful hosted contact form service</li>
               <div class="large-12 columns">
                 
                 <div class="footer-icons">
-                  <a class="social-icon" href="https://github.com/johnludena" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                  <a class="social-icon" href="https://twitter.com/johnludena" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-                  <a class="social-icon" href="https://www.linkedin.com/in/john-ludena-88a70b13" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
-                  <a class="social-icon" href="mailto:johnludena@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  <a class="social-icon" href="https://github.com/johnludena" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                  <a class="social-icon" href="https://www.linkedin.com/in/john-ludena-88a70b13" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                  <a class="social-icon" href="mailto:johnludena@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
                   
                 </div>
 
-                <p class="text-center copyright">© 2016 John Ludena. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Check out the source code for this site <a href="https://github.com/johnludena/johnludena.github.io" target="_blank">here</a>.</p>
+                <p class="text-center copyright">© 2016 John Ludena. Built from the ground up with <i class="fa fa-heart-o" aria-hidden="true"></i> in Houston, TX. Hosted on <a href="https://github.com/johnludena/johnludena.github.io" target="_blank">GitHub</a>.</p>
 
               </div>
             </div>

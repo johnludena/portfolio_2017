@@ -4,9 +4,6 @@ $(document).foundation()
 // Initializing WOW.js library
 new WOW().init()
 
-// Random fact generator (ABOUT ME SECTION)
-var funFacts = ['I grew up in Arequipa, Peru (and lived there for 15 years).', 'I\'m a really good Karaoke singer (but only after 10 beers).', 'I have a motorcycle, but only ride it in the winter because Houston is too damn hot.', 'I graduated with a BFA (Bachelor of Fine Arts) from the University of Houston at Clear Lake.', 'My dream vacation would be a cruise to Alaska to get close and personal with some glaciers.','The city in Europe I want to visit the most is Amsterdam.','I\'m a sucker for good UI.','I\'ll take beer over wine all day, every day.','I have a bit of an entrepreneurial side and love starting tiny web projects on my free time.','I want to write & publish a book before 2020.','I\m a total pool shark and will take your lunch money if we play a game.','Ping pong is the answer to any coding problem road-block.','I am not a huge fan of social media.','I\'m lactose intolerant, so hold the milk please.','My Mom is from Mexico, and my Dad is from Peru.']
-
 //  Nodes required for this black magic to happen
 var gravatarImage = document.querySelector('.gravatar')
 var factContainer = document.querySelector('.fact-bubble')
@@ -14,6 +11,25 @@ var factContainer = document.querySelector('.fact-bubble')
 // Global variables for showRandomFact function
 var lastRandom = null
 var bubbleTimer = null
+
+// Random facts array for 'About Me' section
+var funFacts = ['I grew up in Arequipa, Peru (and lived there for 15 years).',
+	'I\'m a really good Karaoke singer (but only after 10 beers).',
+	'I have a motorcycle, but only ride it in the winter because Houston is too damn hot.',
+	'I graduated with a BFA (Bachelor of Fine Arts) from the University of Houston at Clear Lake.',
+	'My dream vacation would be a cruise to Alaska to get close and personal with some glaciers.',
+	'The city in Europe I want to visit the most is Amsterdam.',
+	'I\'m a sucker for good UI.','I\'ll take beer over wine all day, every day.',
+	'I have a bit of an entrepreneurial side and love starting new web projects on my free time.',
+	'I want to write & publish a book before 2020.',
+	'I\m a total pool shark and will take your lunch money if we play a game.',
+	'Ping-pong is the answer to any coding problem road-block.',
+	'I am not a huge fan of social media.',
+	'I\'m lactose intolerant, so hold the milk please.',
+	'My Mom is from Mexico, and my Dad is from Peru.',
+	'Thuy drives me crazy with her questions, but she is still cool because she brings me food'
+	]
+
 
 // Function to run upon clicking of my head
 var showRandomFact = function(e){
