@@ -27,7 +27,6 @@ var funFacts = ['I grew up in Arequipa, Peru (and lived there for 15 years).',
 	'I am not a huge fan of social media.',
 	'I\'m lactose intolerant, so hold the milk please.',
 	'My Mom is from Mexico, and my Dad is from Peru.',
-	'Thuy drives me crazy with her questions, but she is still cool because she brings me food'
 	]
 
 
