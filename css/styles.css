@@ -173,9 +173,9 @@ cite {
 }
 
 .close-button:hover, .close-button:focus {
-/*	color: #f3f3f3; */
-	color: purple;
-}
+	color: #f3f3f3; 
+/*	color: purple;
+*/}
 
 .orbit-previous:hover, .orbit-next:hover {
 	background: #f7f7f7;
