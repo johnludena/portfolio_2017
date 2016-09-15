@@ -378,9 +378,21 @@ cite {
 }
 
 /* MEDIUM LATEST ARTICLE  */
+
+@media screen and (min-width: 800px){
+	#medium h3 {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+}
+
 .date {
 	font-style: italic;
 	margin-bottom: 50px;
+}
+
+.featured-medium-img {
+	margin-bottom: 40px;
 }
 
 #bottom-cta {
