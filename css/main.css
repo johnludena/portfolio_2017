@@ -151,6 +151,7 @@ p#post-scriptum {
   position: fixed;
   background-image: linear-gradient(to bottom, transparent, white);
   z-index: 1;
+  display: none;
 }
 
 @keyframes slide-in-ya-dms {
@@ -171,6 +172,10 @@ p#post-scriptum {
 
 #signature.active {
   opacity: 1;
+}
+
+svg {
+  max-width: 100%;
 }
 
 svg path {
@@ -424,11 +429,6 @@ svg path {
   }
 }
 
-@media only screen and (min-width: 940px) and (max-width: 1200px) {
-/*   #profile {
-    margin-left: -160px;
-  } */
-}
 
 @media only screen and (max-width: 939px) {
   #profile-container {
@@ -440,6 +440,13 @@ svg path {
     margin: 0 auto;
     float: none;
   }
+}
+
+@media only screen and (min-width: 940px) {
+  #fade-text {
+    display: block;
+  }
+  
 }
 
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
