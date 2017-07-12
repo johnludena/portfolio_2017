@@ -1,490 +1,88 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Ludena | Creative Front-End Developer | Houston, TX</title>
+<html class="no-js" lang="">
 
-    <!-- FontAwesome for random icons needed -->
-    <script src="https://use.fontawesome.com/a7ab802f5c.js"></script>
-    
-    <!-- Foundation CSS for responsive grid and other basic styles -->
-    <link rel="stylesheet" href="css/foundation.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>John Ludena | Creative Front-end Developer | Houston, TX</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Animate.CSS for icon and image CSS animations (used with WOW.js below) -->
-    <link rel="stylesheet" href="css/animate.css">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- WOW.js for timed animation triggers -->
-    <script src="js/wow.min.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
 
-    <!-- Portfolio styles -->
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <!-- setting up off-canvas slide-out form -->
-    <div class="off-canvas-wrapper">
-      <div class="off-canvas-wrapper-inner portfolio-wrapper" data-off-canvas-wrapper>
-        <div class="hidden-form off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+  <!-- Add your site or application content here -->
+  <div class="container">
+    <div class="row">
+      <div id="profile-container" class="one-half column">
+          <div class="img-container"><img id="profile" src="img/john-ludena.png" alt="John Ludena" /></div>
+      </div>
 
-          <!-- Close button -->
-          <button class="close-button" aria-label="Close menu" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-          </button>
+      <div id="letter" class="one-half column u-pull-right">
+        <h1>Dear Internet citizen,</h1>
+        <p class="lead">Hello there. My name is <strong>John Ludena</strong>, a designer and front-end developer with a passion for building user interfaces people <del>enjoy</del> <em>truly love.</em></p>
+  
+        <p>I'm currently working as a web developer at <a href="http://www.chevron.com" target="_blank">Chevron</a>'s in-house creative studio. I'm also a UI/UX development consultant for <a href="http://www.askdoss.com" target="_blank">AskDOSS</a>, the world's first real estate search engine powered by IBM Watson.</p>
 
-          <div class="form-wrapper">
-            <h3>Get in touch with me now</h3>
-
-            <p>You’ve arrived at my super secret contact form! If you’d rather email me directly, my address is <a href="mailto:johnludena@gmail.com">johnludena@gmail.com</a>.</p>
-
-            <form action="https://formspree.io/johnludena@gmail.com"
-      method="POST" data-abide novalidate>
-              <div data-abide-error class="alert callout" style="display: none;">
-                <p><i class="fi-alert"></i> There are some errors in your form.</p>
-              </div>
-              <div class="row">
-                  <label>Full Name:
-                    <input name="name" type="text" required />
-                    <span class="form-error">
-                      Yo, you had better fill this out, it's required.
-                    </span>
-                  </label>
-                  
-                  <label>Phone Number:
-                    <input name="phone" type="text" data-abide-ignore />
-                  </label>
-                  
-                  <label>Email:
-                    <input type="text" name="email" required />
-                    <span class="form-error">
-                      I'm required!
-                    </span>
-                  </label>
-                  <label>Your message:
-                    <textarea name="message" type="text" rows="4"></textarea>
-                    <span class="form-error">
-                      Hey, passwords are supposed to match!
-                    </span>
-                  </label>
-                  <input type="hidden" name="_next" value="/thanks.html" />
-                  
-              </div>
-              
-              <button class="button" type="submit" value="Submit">Submit</button>
-             
-            </form>
-
-          </div><!-- end of contact form section wrapper -->
-
-        </div>
-        <div class="off-canvas-content" data-off-canvas-content>
+        <!-- <p>One of the things I love the most is building products for the web. One of my latest projects is <a href="http://www.javascriptfordesigners.io" target="_blank">Javascript for Designers</a>, a course for UI/UX designers who want to bring their mockup designs to life with Javascript and become the highly sought-after mythical unicorn who can both design <em>and</em> code.</p> -->
           
-          <!-- hero banner section -->
-          <section id="hero">
-            <div class="row">
-              <div class="large-5 columns">
-                <img class="logo wow slideInLeft centered-on-small" src="images/logo.png" alt="John Ludena" />
-                <h1 class="wow slideInLeft centered-on-small">Creative <br/>Front-End Developer for a Better WWW.</h1>
-                <button type="button" class="button wow slideInLeft centered-on-small" data-toggle="offCanvas">Contact me</button>
-              </div>
-              <div class="large-7 columns">
-                <div class="brain-wrapper show-for-large">
-                    <img id="icon-css3" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-css3.png" width="70"/>
-                   
-                    <img id="icon-html5" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-html5.png" width="70"/>
-                    
-                    <img id="icon-sass" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-sass.png" width="70"/>
-                   
-                    <img id="icon-ps" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-ps.png" width="65"/>
-                    
-                    <img id="icon-mongodb" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-mongodb.png" width="70"/>
-                    
-                    <img id="icon-nodejs" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-nodejs.png" width="70"/>
-                   
-                    <img id="icon-react" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-react.png" width="70"/>
-                    
-                    <img id="icon-js" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-js.png" width="70"/>
-                   
-                    <img class="wow fadeIn center" src="images/brain.jpg" />
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- yours truly section -->
-          <section id="about">
-            <h2 class="text-center">A little about yours truly</h2>
-            
-            <div class="row">
-              <div class="large-4 columns">
-                <img class="gravatar center wow fadeIn" src="https://www.gravatar.com/avatar/ac9c09f9d6d3591c0ad7fbdc25ad8d26?s=200" />
-                <div id="random-fact-container">
-                  <div class="fact-bubble hidden arrow_box"></div>
-                </div>
-                <p class="caption text-center">Click on my happy face to learn a random fact about me.<br />
-                TMI may be involved. You’ve been warned.</p>
-              </div>
-
-              <div class="large-8 columns">
-                <!-- TEST ON NEW BRANCH -->
-                <p>My name is <strong>John Ludena</strong> and I’ve been building websites and web applications professionally for <strong>over 6 years</strong> – the last 3 working as an independent freelance contractor.
-
-                <p>In that time, I’ve built countless web properties for companies ranging from brand-new startups – all the way to large corporations. I’ve not only got the chance to work with some extremely talented teams, but also learn from some incredibly smart and tech savvy business owners.</p>      
-
-                <p>It’s been an incredible journey so far.</p>    
-
-                <p>Are YOU looking for a talented front-end developer who also happens to have an eye for great visual design? I might just be the right person to join your team. <a data-toggle="offCanvas">Shoot me a message</a> and let's start a conversation today.</p>
-
-              </div>
-            </div>
-          </section>
-
-          <!-- skills section -->
-          <section id="skills">
-
-            <h2 class="text-center">My bread and butter skills</h2>
-            <p class="text-center">(You can also <a href="./John-Ludena.pdf">download my full PDF resume here</a>)</p>
-
-            <div class="row skill-row">
-              <div class="large-6 columns dev-skill">
-                <div class="row">
-                  <div class="small-3 columns">
-                      <img src="images/icon-front-end.png" />
-                  </div>
-                
-                  <div class="small-9 columns">
-                     <h3>Front-end Development</h3>
-                      <p>This is where I get to transform image mockups into beautiful & fluid web interfaces with the power of HTML, CSS & Javascript.</p>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="large-6 columns dev-skill">
-                <div class="row">
-                  <div class="small-3 columns">
-                      <img src="images/icon-responsive.png" />
-                  </div>
-                
-                  <div class="small-9 columns">
-                     <h3>Responsive Design</h3>
-                      <p>I'm a responsive design veteran and have extensive experience adapting any design for mobile devices like smartphones and tablets.</p>
-
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-             <div class="row skill-row">
-              <div class="large-6 columns dev-skill">
-                <div class="row">
-                  <div class="small-3 columns">
-                      <img src="images/icon-ecommerce.png" />
-                  </div>
-                
-                  <div class="small-9 columns">
-                     <h3>Ecommerce &<br /> Online Payments</h3>
-                      <p>I have a fascination with selling things online and have worked with a variety of different shopping cart platforms, payment APIs, etc. Ecommerce has become my thing.</p>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="large-6 columns dev-skill">
-                <div class="row">
-                  <div class="small-3 columns">
-                      <img src="images/icon-wordpress.png" />
-                  </div>
-                
-                  <div class="small-9 columns">
-                     <h3>Wordpress Development</h3>
-                      <p>Tinkering with Wordpress is how I first got my start in the world of functional programming and I still use Wordpress today for certain projects where people need a popular and extensible platform to start a new business.</p>
-
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-
-          </section> 
-
-          <!-- works section -->
-          <section id="work">
-
-            <h2 class="text-center">My latest projects</h2>
-
-            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-              <ul class="orbit-container">
-                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-
-                <li class="orbit-slide">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <img src="images/app-demo-storegrafi.jpg" />
-                    
-                    </div>
-
-                    <div class="large-6 columns">
-                      <h3>Storegafi</h3>
-                      <h4>A store-building platform for Instagram creators.</h4>
-                      <p><strong>Project Highlights:</strong></p>
-                      <ul>
-                        <li>React.js with Flux Architecture</li>
-                        <li>Use of Instagram API to connect to users account and download Instagram photos</li>
-                        <li>Use of Stripe Connect to build a payments platform where each store owner could manage customer payments, refunds, etc.</li>
-                        <li>Emphasis on the best possible mobile-checkout experience through Stripe Checkout</li>
-                        <li>A seamless user experience between Instagram and a user's online store</li>
-                      </ul>
-
-                      <p class="build-summary"><strong>Technology used:</strong> MongoDB, Express, React.js, Node.js, Backbone.js, Instagram API, Stripe API, Foundation 6, HTML5, SASS</p>
-
-                       <a class="button small" href="http://www.storegrafi.com" target="_blank">View live demo</a>
-                       <a class="button hollow small" href="https://github.com/johnludena/storegrafi" target="_blank">View source code</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="orbit-slide">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <img src="images/app-demo-precash.jpg" />
-                    
-                    </div>
-
-                    <div class="large-6 columns">
-                      <h3>PreCash</h3>
-                      <h4>Custom wordpress theme with third party app integrations.</h4>
-                      <p><strong>Project Highlights:</strong></p>
-                      <ul>
-                        <li>A fully custom Wordpress theme built from PSD mockups</li>
-                        <li>Integration with Taleo, a third party HR recruiting software
-Integration with Formstack, a powerful hosted contact form service</li>
-                        <li>Connecting to a third party SQL database for displaying PreCash store locations based on user's ZIP code</li>
-                        <li>Mobile-responsiveness for optimal user experience</li>
-                      </ul>
-
-                      <p class="build-summary"><strong>Technology used:</strong> HTML5, CSS3, Foundation 6, Wordpress, Taleo, Third-party SQL database integration.</p>
-
-                       <a class="button small" href="http://www.precash.com" target="_blank">View live demo</a>
-                    </div>
-                  </div>
-                </li>
-
-
-                <li class="orbit-slide">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <img src="images/app-demo-drumpfsy.jpg" />
-
-                    </div>
-
-                    <div class="large-6 columns">
-                      <h3>Drumpfsy</h3>
-                      <h4>An Trump-themed Etsy shop.</h4>
-                  
-                      <p><strong>Project Highlights:</strong></p>
-
-                      <ul>
-                        <li>Backbone.js for a MVC architecture</li>
-                        <li>React.js for all application views</li>
-                        <li>Fetching Etsy data via their API</li>
-                        <li>Responsive and mobile-friendly web app</li>
-                      </ul>
-
-                      <p class="build-summary"><strong>Technology used:</strong> HTML5, SASS, React.js, Backbone.js, Etsy API </p>
-                      <a class="button small" href="http://drumpfsy.herokuapp.com/#home" target="_blank">View live demo</a>
-                      <a class="button hollow small" href="https://github.com/johnludena/drumpfsy" target="_blank">View source code</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="orbit-slide">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <img src="images/app-demo-blueleaf.jpg" />
-
-                    </div>
-
-                    <div class="large-6 columns">
-                      <h3>Blue Leaf</h3>
-                      <h4>Ecommerce website with gift registry software integration.</h4>
-                      
-                      <p><strong>Project Highlights:</strong></p>
-
-                      <ul>
-                        <li>UPS & USPS shipping carrier integration for live-pricing quotes</li>
-                        <li>Integration with Registry Valet, a third party registry software</li>
-                        <li>Use of the Wordpress CMS for easy product catalog maintenance, page updates, and customer order management</li>
-                        <li>Training different members of the Blue Leaf sales team to use the new website and manage & ship customer orders</li>
-                        <li>Mobile-responsiveness for optimal user experience</li>
-                      </ul>
-
-                      <p class="build-summary"><strong>Technology used:</strong> HTML5, CSS3, Wordpress, WooCommerce, Registry Valet integration with custom PHP.</p>
-
-                      <a class="button small" href="http://www.blueleafhouston.com" target="_blank">View live demo</a>
-                    </div>
-                  </div>
-                </li>
-
-                
-
-                <li class="orbit-slide">
-                  <div class="row">
-                    <div class="large-6 columns">
-                        <img src="images/app-demo-todo.jpg" />
-
-                    </div>
-
-                    <div class="large-6 columns">
-                      <h3>Todo App</h3>
-                      <h4>A simple and minimalistic to-do app.</h4>
-                   
-                      <p><strong>Project Highlights:</strong></p>
-
-                      <ul>
-                        <li>Backbone.js for a MVC architecture</li>
-                        <li>React.js for tracking state of completed to-dos</li>
-                        <li>Minimalistic design</li>
-                        <li>Fully responsive</li>
-                      </ul>
-
-                      <p class="build-summary"><strong>Technology used:</strong> HTML5, SASS, React.js, Backbone.js</p>
-
-                      <a class="button small" href="http://gsdone.herokuapp.com/" target="_blank">View live demo</a>
-                      <a class="button hollow small" href="https://github.com/johnludena/gsdone" target="_blank">View source code</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="orbit-slide">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <img src="images/app-demo-ecommtut.jpg" />
-                    </div>
-
-                    <div class="large-6 columns">
-                      <h3>EcommerceTutorial.net</h3>
-                      <h4>Ecommerce blog and YouTube channel for ecommerce students.</h4>
-                                            
-                      <p><strong>Project Highlights:</strong></p>
-
-                      <ul>
-                        <li>1,700+ YouTube subscribers</li>
-                        <li>100,000+ video views</li>
-                        <li>Engaging screencast tutorials for ecommerce beginners</li>
-                      </ul>
-
-                      <p class="build-summary"><strong>Technology used:</strong> HTML5, CSS3, Wordpress, cPanel Administration, Mailchimp, Camtasia (for recording screencasts)</p>
-
-
-                      <a class="button small" href="http://www.youtube.com/user/ecommercetutorial" target="_blank">View live demo</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-             
-            </div>            
-
-          </section>
-
-          <!-- testimonials section -->
-          <section id="testimonials">
-            <h2 class="text-center">Some kind words from some amazing people...</h2>
-            <div class="row">
-              <div class="large-10 large-centered columns">
-
-                <!-- start of Foundation Orbit -->
-                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="data-auto-play: false">
-                  <ul class="orbit-container">
-                    
-                    <li class="is-active orbit-slide">
-                      <blockquote>"John produces great results no matter how big the project or how tight the schedule. He stays up-to-date with the latest developments in technology and makes excellent suggestions to improve the performance and functionality of websites. I highly recommend him for your next project.”.<cite>Rick Naylor, Marketing Director at PreCash</cite></blockquote>
-
-                    </li>
-                    <li class="orbit-slide">
-                      <blockquote>"Working with John is not only very easy and effective, but also a pleasure! He is very skilled and keeps educating himself to learn new things he later applies to your projects. He is reliable, hard working, very fairly priced, and someone you can completely trust – especially when dealing with delicate information.”.<cite>Renzo Bolivar, Account Manager at Lopez Negrete Communications</cite></blockquote>
-                    </li>
-                    <li class="orbit-slide">
-                      <blockquote>"John not only has excellent design skills but is extremely knowledgeable at digital production and solving web issues. John adds talent and value to any project.”<cite>Wes Weaver, Owner of W-Squared Marketing</cite></blockquote>
-                    </li>
-                    <li class="orbit-slide">
-                      <blockquote>"John is flexible and easy to work with.  He listens and then focuses on solving your website challenge with a solution that works and is aesthetically pleasing.  He is a great member of the team.”<cite>Nick Pantazis, President of WilsherCo, Inc.</cite></blockquote>
-                    </li>
-                  </ul>
-                  <nav class="orbit-bullets">
-                    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-                    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-                  </nav>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-          <!-- medium section -->
-          <section id="medium">
-            <h2 class="text-center">Featured Medium Ramblings</h2>
-            <h3 class="text-center">Why Attending a Coding Bootcamp Was One of the Best Decisions I’ve Ever Made</h3>
-            <p class="date text-center">Published on September 13th, 2016</p>
-            <div class="row">
-              <div class="large-6 columns">
-                <img class="featured-medium-img" src="images/medium-featured.jpg" />
-              </div>
-              <div class="large-6 columns">
-                <p>I have a confession to make: I’m not really a “developer.”
-I’m really a fraud.</p>
-                <p>Or at least felt like one until recently.</p>
-                <p>I’m actually just a graphic designer who learned a bit of HTML, CSS, and some Wordpress. And then started calling himself a “web developer.”</p>
-
-                <a class="button hollow small" href="https://medium.com/@johnludena/why-attending-a-coding-bootcamp-was-one-of-the-best-decisions-ive-ever-made-7a431cb1363c#.95dztza92" target="_blank">Read this post on Medium.com</a>
-              </div>
-            </div>
-          </section>
-
-          <!-- bottom page call-to-action -->
-          <section id="bottom-cta">
-            <h2 class="text-center">Ready to build something special together?</h2>
-            <div class="row">
-              
-              <div class="large-12 columns">
-                <p>Hit that button below and let’s start a friendly chat. I promise you won’t regret it.</p>
-                <button type="button" class="button" data-toggle="offCanvas">Get in touch with me</button>
-              </div>
-            </div>
-          </section>
-
-          <!-- footer section -->
-          <section id="footer">
-            <div class="row">
-              
-              <div class="large-12 columns">
-                
-                <div class="footer-icons">
-                  <a class="social-icon" href="https://github.com/johnludena" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                  <a class="social-icon" href="https://www.linkedin.com/in/john-ludena-88a70b13" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                  <a class="social-icon" href="mailto:johnludena@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-                  
-                </div>
-
-                <p class="text-center copyright">© 2016 John Ludena. Built from the ground up with <i class="fa fa-heart-o" aria-hidden="true"></i> in Houston, TX. Hosted on <a href="https://github.com/johnludena/johnludena.github.io" target="_blank">GitHub</a>.</p>
-
-              </div>
-            </div>
-          </section>
-
-        </div><!-- end of off-canvas content wrapper -->
+        <p>I have a candid romance with the written word and have published a few articles on <a href="//medium.com/@johnludena" target="_blank">Medium</a> about a variety of topics including design, development, business, and life. Please check those out if you want to get to know me a little better.</p>
+        
+        <p>At the moment, I'm taking a break from all social media so you won't find me active on Twitter, Facebook, Instagram, Snapchat, Soxial or SnipeDeeDoo (I made the last two up).</p>
+        
+        <p>The only platform I still keep up with is <a href="http://www.linkedin.com/in/john-ludena" target="_blank">LinkedIn</a>, so please feel free to add me if you want to connect professionally. Need to get in touch quickly? <a id="email-trigger" href="#">Shoot me an email here instead</a>.</p>
+        
+        <p>Thank you for stopping by.</p>
+        
+        <p>All the best,</p>
+        
+        <div id="signature"></div>
+        
+        <p id="post-scriptum">PS - Want to become BFFs? <a href="http://eepurl.com/Z0giz" target="_blank">Subscribe</a> to my email list to get updates on what projects I'm working on next.</p>
+        
+        <div id="fade-text"></div>
       </div>
     </div>
+  </div>
 
-    
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+    window.jQuery ||
+      document.write('<script src="js/vendor/jquery-1.12.0.min.js"></script>
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/vendor/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
-  </body>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] ||
+        (b[l] = function() {
+          (b[l].q = b[l].q || []).push(arguments);
+        });
+      b[l].l = +new Date();
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = "https://www.google-analytics.com/analytics.js";
+      r.parentNode.insertBefore(e, r);
+    })(window, document, "script", "ga");
+    ga("create", "UA-XXXXX-X", "auto");
+    ga("send", "pageview");
+  </script>
+</body>
+
 </html>
