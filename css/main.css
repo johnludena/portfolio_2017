@@ -129,10 +129,6 @@ p#post-scriptum {
   opacity: 0;
 }
 
-#signature {
-  margin-left: -20px;
-}
-
 #profile {
   position: fixed;
   max-width: 50%;
@@ -149,9 +145,8 @@ p#post-scriptum {
   right: 0;
   bottom: 0;
   position: fixed;
-  background-image: linear-gradient(to bottom, transparent, white);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), white);
   z-index: 1;
-  display: none;
 }
 
 @keyframes slide-in-ya-dms {
@@ -166,6 +161,10 @@ p#post-scriptum {
 }
 
 /* Animated SVG Signature */
+#signature {
+  margin-left: -20px;
+}
+
 #signature {
   opacity: 0;
 }
@@ -441,11 +440,6 @@ svg path {
     float: none;
   }
 }
-
-@media only screen and (min-width: 940px) {
-  #fade-text {
-    display: block;
-  }
   
 }
 
