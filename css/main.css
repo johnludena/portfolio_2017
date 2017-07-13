@@ -137,6 +137,7 @@ p#post-scriptum {
   z-index:  99;
   opacity: 0;
   animation: .5s ease-in 1s forwards slide-in-ya-dms;
+  -webkit-animation: .5s ease-in 1s forwards slide-in-ya-dms;
 }
 
 #fade-text {
@@ -191,24 +192,28 @@ svg path {
   stroke-dasharray: 4;
   stroke-dasharray: 450;
   animation: 10s letter1 linear;
+  -webkit-animation: 10s letter1 linear;
 }
 
 #signature.active #first-O {
   stroke-dasharray: 4;
   stroke-dasharray: 450;
   animation: 10s letter2 linear;
+  -webkit-animation: 10s letter2 linear;
 }
 
 #signature.active #first-H {
   stroke-dasharray: 4;
   stroke-dasharray: 450;
   animation: 5s letter3 linear;
+  -webkit-animation: 5s letter3 linear;
 }
 
 #signature.active #first-N {
   stroke-dasharray: 4;
   stroke-dasharray: 450;
-  animation: 2.5s letter4 linear;
+  animation: 3s letter4 linear;
+  -webkit-animation: 3s letter4 linear;
 }
 
 /* ========= LAST NAME ====== */
@@ -216,36 +221,42 @@ svg path {
   stroke-dasharray: 4;
   stroke-dasharray: 450;
   animation: 3.3s letter5 linear;
+  -webkit-animation: 3.3s letter5 linear;
 }
 
 #signature.active #last-U {
   stroke-dasharray: 4;
   stroke-dasharray: 450;
   animation: letter6 4s linear;
+  -webkit-animation: letter6 4s linear;
 }
 
 #signature.active #last-D {
   stroke-dasharray: 4;
   stroke-dasharray: 450;
   animation: letter7 4s linear;
+  -webkit-animation: letter7 4s linear;
 }
 
 #signature.active #last-E {
   stroke-dasharray: 4;
   stroke-dasharray: 450;
   animation: letter8 4s linear;
+  -webkit-animation: letter8 4s linear;
 }
 
 #signature.active #last-N {
   stroke-dasharray: 4;
   stroke-dasharray: 450;
   animation: letter9 4s linear;
+  -webkit-animation: letter9 4s linear;
 }
 
 #signature.active #last-A {
   stroke-dasharray: 4;
   stroke-dasharray: 450;
   animation: letter10 4s linear;
+  -webkit-animation: letter10 4s linear;
 }
 
 @keyframes letter1 {
@@ -276,8 +287,8 @@ svg path {
 }
 
 @keyframes letter4 {
-    0%, 30% {
-        stroke-dashoffset: -450;
+    0%, 35% {
+        stroke-dashoffset: 450;
     }
     45% {
         stroke-dashoffset: 0;
